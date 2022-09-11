@@ -17,15 +17,17 @@ function App({ location, forecasts }) {
 export default App;
 
 App.propTypes = {
-  forecasts: PropTypes.shape({
-    date: PropTypes.number,
-    description: PropTypes.string,
-    icon: PropTypes.number,
-    temperature: PropTypes.shape({
-      min: PropTypes.number,
-      max: PropTypes.number,
-    }),
-  }).isRequired,
+  forecasts: PropTypes.arrayOf(
+    PropTypes.shape({
+      date: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+      temperature: PropTypes.shape({
+        min: PropTypes.number,
+        max: PropTypes.number,
+      }).isRequired,
+    })
+  ).isRequired,
   location: PropTypes.shape({
     city: PropTypes.string,
     country: PropTypes.string,
