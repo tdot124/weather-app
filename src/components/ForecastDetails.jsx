@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function ForecastDetails(props) {
-  const { forecast } = props;
+function ForecastDetails({ forecast }) {
   const { date, temperature, humidity, wind } = forecast;
   const formattedDate = new Date(date).toDateString();
 
@@ -38,4 +37,4 @@ ForecastDetails.propTypes = {
       direction: PropTypes.string,
     }).isRequired,
   }).isRequired,
-}
+};
