@@ -5,7 +5,7 @@ function SearchForm({ onSubmit, searchText, setSearchText }) {
   const handleInputChange = (e) => setSearchText(e.target.value);
 
   return (
-    <div>
+    <div className="search-form">
       <input type="text" onChange={handleInputChange} value={searchText} />
       <button type="button" onClick={onSubmit}>
         Search
