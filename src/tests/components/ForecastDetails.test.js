@@ -28,7 +28,7 @@ describe("ForecastDetails", () => {
       "class",
       "forecast-details__date"
     );
-    expect(getByText("Humidity: 30")).toHaveAttribute(
+    expect(getByText("Humidity: 30%")).toHaveAttribute(
       "class",
       "forecast-details__humidity"
     );
@@ -40,9 +40,13 @@ describe("ForecastDetails", () => {
       "class",
       "forecast-details__max-temperature"
     );
-    expect(getByText("Wind: 13mph s")).toHaveAttribute(
+    expect(getByText("Wind Speed: 13mph")).toHaveAttribute(
       "class",
-      "forecast-details__wind"
+      "forecast-details__wind-speed"
+    );
+    expect(getByText("Wind Direction: s")).toHaveAttribute(
+      "class",
+      "forecast-details__wind-direction"
     );
   });
 });
