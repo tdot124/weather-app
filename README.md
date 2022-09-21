@@ -1,7 +1,10 @@
 # Weather App
 
 This is my first project as part of the front-end module of the Manchester Codes software development bootcamp.
-As part of this project I have been developing my skills using react to create a Weather App user interface.
+
+In this project I have built a Weather App user interface, developing my skills in React along the way.
+
+This app fetches data from the Manchester Codes weather API based on a user search of UK cities.
 
 ## Installation
 
@@ -10,6 +13,12 @@ Clone the repo
 ```
 git clone https://github.com/tdot124/weather-app
 
+```
+
+Install depencies
+
+```
+npm install
 ```
 
 To start weather app move to the weather app folder and type
