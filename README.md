@@ -8,7 +8,35 @@ This app fetches data from the Manchester Codes weather API based on a user sear
 
 ## Screenshots
 
-## Technologies used
+### Browser
+
+![Browser view of weather app](browser-view.png)
+
+### Mobile
+
+![Mobile view of weather app](mobile-view.png)
+
+## Technologies Used
+
+### Language
+
+- Javascript
+- React
+
+### Testing
+
+- Jest
+- React Testing Library
+
+### Packages
+
+- Axios
+- PropTypes
+- React Weather Icons
+
+### Styling
+
+- CSS
 
 ## Installation
 
@@ -23,6 +51,8 @@ To start weather app use `npm start`
 The default city is Manchester. You can use the search box to search for a city in the UK you would like the forecast for. If the app cannot find the city you are looking for it will display an error message.
 
 ## What I would do with more time
+
+With more time I would like to add an option of selecting a dark or light theme using 'useContext' and add icons for wind direction.
 
 ## Created By
 
