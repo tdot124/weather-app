@@ -1,9 +1,9 @@
-import "../styles/ForecastSummaries.css";
+import "../styles/forecast-summaries.css";
 import React from "react";
 import PropTypes from "prop-types";
 import ForecastSummary from "./ForecastSummary";
 
-function ForecastSummaries({ forecasts, onForecastSelect }) {
+const ForecastSummaries = ({ forecasts, onForecastSelect }) => {
   return (
     <div className="forecast-summaries">
       {forecasts.map((forecast) => (
@@ -18,7 +18,7 @@ function ForecastSummaries({ forecasts, onForecastSelect }) {
       ))}
     </div>
   );
-}
+};
 
 export default ForecastSummaries;
 

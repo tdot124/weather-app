@@ -6,33 +6,24 @@ In this project I have built a Weather App user interface, developing my skills 
 
 This app fetches data from the Manchester Codes weather API based on a user search of UK cities.
 
+## Screenshots
+
+## Technologies used
+
 ## Installation
 
-Clone the repo
+Clone the repo using `git clone https://github.com/tdot124/weather-app`
 
-```
-git clone https://github.com/tdot124/weather-app
+`cd` into folder and install dependencies using `npm install`
 
-```
-
-Install depencies
-
-```
-npm install
-```
-
-To start weather app move to the weather app folder and type
-
-```
-npm start
-```
-
-You can run the tests by typing
-
-```
-npm test
-```
+To start weather app use `npm start`
 
 ## Using Weather App
 
 The default city is Manchester. You can use the search box to search for a city in the UK you would like the forecast for. If the app cannot find the city you are looking for it will display an error message.
+
+## What I would do with more time
+
+## Created By
+
+Tom Mills

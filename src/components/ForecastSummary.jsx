@@ -1,9 +1,15 @@
-import "../styles/ForecastSummary.css";
+import "../styles/forecast-summary.css";
 import React from "react";
 import WeatherIcon from "react-icons-weather";
 import PropTypes from "prop-types";
 
-function ForecastSummary({ date, description, icon, onSelect, temperature }) {
+const ForecastSummary = ({
+  date,
+  description,
+  icon,
+  onSelect,
+  temperature,
+}) => {
   const formattedDate = new Date(date).toDateString();
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
@@ -24,7 +30,7 @@ function ForecastSummary({ date, description, icon, onSelect, temperature }) {
       </button>
     </div>
   );
-}
+};
 
 export default ForecastSummary;
 

@@ -1,4 +1,5 @@
-import "../styles/App.css";
+/* eslint-disable react/function-component-definition */
+import "../styles/app.css";
 import React, { useEffect, useState } from "react";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
@@ -6,7 +7,7 @@ import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
 import SearchForm from "./SearchForm";
 
-function App() {
+const App = () => {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
@@ -61,6 +62,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;

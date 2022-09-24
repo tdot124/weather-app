@@ -9,3 +9,10 @@
 .forecast-summary__icon {
   font-size: 30px;
 }
+
+@media (max-width: 768px) {
+  .forecast-summary {
+    text-align: center;
+    margin-top: 15px;
+  }
+}

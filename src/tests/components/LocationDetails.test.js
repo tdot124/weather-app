@@ -10,4 +10,18 @@ describe("LocationDetails", () => {
 
     expect(getByText("Manchester, UK")).toBeInstanceOf(HTMLHeadingElement);
   });
+
+  it("renders error message when passed error message", () => {
+    const { getByText } = render(
+      <LocationDetails
+        errorMessage="No such town or city, please try again."
+        city="not a city"
+        country="not a country"
+      />
+    );
+
+    expect(getByText("No such town or city, please try again.")).toBeInstanceOf(
+      HTMLHeadingElement
+    );
+  });
 });

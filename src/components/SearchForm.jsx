@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function SearchForm({ onSubmit, searchText, setSearchText }) {
+const SearchForm = ({ onSubmit, searchText, setSearchText }) => {
   const handleInputChange = (e) => setSearchText(e.target.value);
 
   return (
@@ -12,7 +12,7 @@ function SearchForm({ onSubmit, searchText, setSearchText }) {
       </button>
     </div>
   );
-}
+};
 
 export default SearchForm;
 

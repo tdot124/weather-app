@@ -1,8 +1,8 @@
-import "../styles/ForecastDetails.css";
+import "../styles/forecast-details.css";
 import React from "react";
 import PropTypes from "prop-types";
 
-function ForecastDetails({ forecast }) {
+const ForecastDetails = ({ forecast }) => {
   const { date, temperature, humidity, wind } = forecast;
   const formattedDate = new Date(date).toDateString();
 
@@ -24,7 +24,7 @@ function ForecastDetails({ forecast }) {
       </div>
     </div>
   );
-}
+};
 
 export default ForecastDetails;
 
