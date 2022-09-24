@@ -12,7 +12,7 @@ This app fetches data from the Manchester Codes weather API based on a user sear
 
 ## Installation
 
-Clone the repo using `git clone https://github.com/tdot124/weather-app`
+Clone the repo: `git clone https://github.com/tdot124/weather-app`
 
 `cd` into folder and install dependencies using `npm install`
 
