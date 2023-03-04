@@ -9,7 +9,7 @@ const getForecast = async (
   setLocation,
   setErrorMessage
 ) => {
-  let endpoint = "https://mcr-codes-weather-app.herokuapp.com/forecast";
+  let endpoint = "https://cmd-shift-weather-app-alt.onrender.com/forecast";
   if (searchText) {
     endpoint += `?city=${searchText}`;
   }
